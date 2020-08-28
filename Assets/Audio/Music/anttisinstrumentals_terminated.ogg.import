@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/anttisinstrumentals_terminated.ogg-61f167f76a90fe596d1627cddc5f9590.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/anttisinstrumentals_terminated.ogg"
+dest_files=[ "res://.import/anttisinstrumentals_terminated.ogg-61f167f76a90fe596d1627cddc5f9590.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

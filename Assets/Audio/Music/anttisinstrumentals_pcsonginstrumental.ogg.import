@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/anttisinstrumentals_pcsonginstrumental.ogg-2457723e7a14809b599882ced0daac53.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/anttisinstrumentals_pcsonginstrumental.ogg"
+dest_files=[ "res://.import/anttisinstrumentals_pcsonginstrumental.ogg-2457723e7a14809b599882ced0daac53.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

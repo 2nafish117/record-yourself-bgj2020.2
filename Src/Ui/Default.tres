@@ -1,0 +1,11 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Ui/Montserrat-Bold.ttf" type="DynamicFontData" id=1]
+
+[resource]
+size = 64
+outline_size = 2
+outline_color = Color( 0.298039, 0.0196078, 0.54902, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )

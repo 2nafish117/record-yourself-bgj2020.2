@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/anttisinstrumentals_whiteboyblacksoulinstrumental.ogg-ff52c0c1170d463e99d44998c0c53bac.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/anttisinstrumentals_whiteboyblacksoulinstrumental.ogg"
+dest_files=[ "res://.import/anttisinstrumentals_whiteboyblacksoulinstrumental.ogg-ff52c0c1170d463e99d44998c0c53bac.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

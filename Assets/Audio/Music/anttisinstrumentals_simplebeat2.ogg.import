@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/anttisinstrumentals_simplebeat2.ogg-badd089c29c00c1451fb6823e24a458c.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/anttisinstrumentals_simplebeat2.ogg"
+dest_files=[ "res://.import/anttisinstrumentals_simplebeat2.ogg-badd089c29c00c1451fb6823e24a458c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RayShape2D" id=1]
+length = 24.0
+
+[node name="PlayerCollisionLeg2" type="CollisionShape2D"]
+position = Vector2( -15, -25 )
+shape = SubResource( 1 )
+__meta__ = {
+"_editor_description_": ""
+}

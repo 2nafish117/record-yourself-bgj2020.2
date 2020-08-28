@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Src/Ui/Titles.tres" type="DynamicFont" id=1]
+
+[node name="Title" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 102.0
+margin_top = -2.0
+margin_right = 910.0
+margin_bottom = 315.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 0.376471, 0, 1 )
+text = "Record"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 519.0
+margin_top = 129.0
+margin_right = 1327.0
+margin_bottom = 446.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 0.376471, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.682353, 0.152941, 0.152941, 1 )
+text = "Yourself"
+__meta__ = {
+"_edit_use_anchors_": false
+}

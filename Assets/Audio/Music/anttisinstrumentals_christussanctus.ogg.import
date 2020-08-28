@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/anttisinstrumentals_christussanctus.ogg-f807442c25f5394f82e8a02402e36ee3.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/anttisinstrumentals_christussanctus.ogg"
+dest_files=[ "res://.import/anttisinstrumentals_christussanctus.ogg-f807442c25f5394f82e8a02402e36ee3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

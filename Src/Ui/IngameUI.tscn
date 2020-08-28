@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Src/Ui/Default.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Src/Ui/LevelButton.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sprites/white_256x256.png" type="Texture" id=3]
+[ext_resource path="res://Src/Ui/IngameUI.gd" type="Script" id=4]
+
+[node name="IngameUi" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="LevelButton" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 0.137
+margin_left = -169.0
+margin_bottom = -13.64
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 0.717647 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.878431, 0.290196, 0.196078, 0.807843 )
+text = "Back"
+flat = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+normal_color = Color( 1, 1, 1, 0.392157 )
+focused_color = Color( 1, 1, 1, 0.588235 )
+pressed_color = Color( 0.945098, 0.478431, 0.427451, 0.588235 )
+
+[node name="TextureRect" type="TextureRect" parent="LevelButton"]
+self_modulate = Color( 1, 1, 1, 0 )
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="LevelButton" to="LevelButton" method="_on_LevelButton_button_down"]
+[connection signal="button_up" from="LevelButton" to="LevelButton" method="_on_LevelButton_button_up"]
+[connection signal="focus_entered" from="LevelButton" to="LevelButton" method="_on_LevelButton_focus_entered"]
+[connection signal="focus_exited" from="LevelButton" to="LevelButton" method="_on_LevelButton_focus_exited"]
+[connection signal="mouse_entered" from="LevelButton" to="LevelButton" method="_on_LevelButton_mouse_entered"]
+[connection signal="mouse_exited" from="LevelButton" to="LevelButton" method="_on_LevelButton_mouse_exited"]
+[connection signal="pressed" from="LevelButton" to="." method="_on_LevelButton_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/anttisinstrumentals_spacevoodo.ogg-c3e9b329c1f762609aa6a574da50cadd.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/anttisinstrumentals_spacevoodo.ogg"
+dest_files=[ "res://.import/anttisinstrumentals_spacevoodo.ogg-c3e9b329c1f762609aa6a574da50cadd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Sprites/GravLift.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/GravBase.png" type="Texture" id=2]
+[ext_resource path="res://Src/Interactibles/Lift/Lift.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Sprites/GravBaseLight.png" type="Texture" id=4]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[node name="Lift" type="Area2D"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="GravLift" type="Sprite" parent="."]
+material = SubResource( 1 )
+position = Vector2( 0, -107 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 70, 200 )
+
+[node name="GravBase" type="Sprite" parent="."]
+position = Vector2( 0, -7 )
+texture = ExtResource( 2 )
+
+[node name="GravBaseLight" type="Sprite" parent="GravBase"]
+texture = ExtResource( 4 )
+[connection signal="body_entered" from="." to="." method="_on_Lift_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Lift_body_exited"]

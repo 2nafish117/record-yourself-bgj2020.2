@@ -1,0 +1,92 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Src/Autoloads/MusicController.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_whiteboyblacksoulinstrumental.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_theoryoffunk.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_temporarilynothere.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_bassmelody.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_dancinginfirev2.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_classicalmeetselectronica.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_happyday.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_islandofhealing.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_nightflight2000.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_pcsonginstrumental.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_oldsynthesizersong.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_christussanctus.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_simplebeat2.ogg" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_somewhereinouterspace.ogg" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_spacevoodo.ogg" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_terminated.ogg" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Audio/Music/anttisinstrumentals_atomic.ogg" type="AudioStream" id=18]
+
+[node name="MusicController" type="Node"]
+script = ExtResource( 1 )
+randomize_order = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+bus = "Music"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "Music"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+bus = "Music"
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "Music"
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "Music"
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+bus = "Music"
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "Music"
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+bus = "Music"
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+bus = "Music"
+
+[node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+bus = "Music"
+
+[node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+bus = "Music"
+
+[node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+bus = "Music"
+
+[node name="AudioStreamPlayer13" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+bus = "Music"
+
+[node name="AudioStreamPlayer14" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "Music"
+
+[node name="AudioStreamPlayer15" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+bus = "Music"
+
+[node name="AudioStreamPlayer16" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "Music"
+
+[node name="AudioStreamPlayer17" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+bus = "Music"

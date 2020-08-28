@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Src/Levels/Background.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/LevelBackground.png" type="Texture" id=2]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Background" type="ParallaxLayer" parent="."]
+z_as_relative = false
+motion_scale = Vector2( 0.1, 0.1 )
+motion_mirroring = Vector2( 1920, 1080 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Background"]
+position = Vector2( -304, -306 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Timer" type="Timer" parent="Background"]
+wait_time = 2.0
+autostart = true
+[connection signal="timeout" from="Background/Timer" to="Background" method="_on_Timer_timeout"]

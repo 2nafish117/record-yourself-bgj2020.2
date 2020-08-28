@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Ui/Background.png" type="Texture" id=1]
+[ext_resource path="res://Src/Ui/Main.gd" type="Script" id=2]
+[ext_resource path="res://Src/Ui/Title.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Sprites/record.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/playback.png" type="Texture" id=5]
+[ext_resource path="res://Src/Ui/LevelButton.tscn" type="PackedScene" id=6]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.5
+anchor_bottom = 1.5
+margin_right = -0.00012207
+margin_bottom = -0.00012207
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -76.5
+margin_right = 76.5
+margin_bottom = 220.0
+custom_constants/separation = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" parent="VBoxContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 197.0
+margin_bottom = 85.0
+text = "Play"
+icon = ExtResource( 5 )
+
+[node name="QuitButton" parent="VBoxContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 135.0
+margin_right = 197.0
+margin_bottom = 220.0
+text = "Quit"
+icon = ExtResource( 4 )
+
+[node name="Title" parent="." instance=ExtResource( 3 )]
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

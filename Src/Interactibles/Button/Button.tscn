@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Src/Interactibles/Button/Button.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/ButtonBase.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/Button.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 22, 7 )
+
+[node name="Button" type="Area2D"]
+script = ExtResource( 1 )
+not_pressed_color = Color( 1, 0.188235, 0, 1 )
+pressed_color = Color( 0, 1, 0.462745, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -7 )
+shape = SubResource( 1 )
+
+[node name="ButtonBase" type="Sprite" parent="."]
+position = Vector2( 0, -8 )
+texture = ExtResource( 2 )
+
+[node name="Button" type="Sprite" parent="ButtonBase"]
+texture = ExtResource( 3 )
+[connection signal="body_entered" from="." to="." method="_on_Button_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Button_body_exited"]
